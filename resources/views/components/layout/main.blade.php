@@ -26,8 +26,8 @@
         <li><a href="{{ route('faq') }}"
                class="{{ Request::route()->getName() === 'faq' ? "active" : "" }}">
                 FAQ</a></li>
-        <li><a href="{{ route('blog') }}"
-               class="{{ Request::route()->getName() === 'blog' ? "active" : "" }}">
+        <li><a href="{{ route('posts.index') }}"
+               class="{{ Request::route()->getName() === 'posts.index' ? "active" : "" }}">
                 Blog</a></li>
     </ul>
 </nav>
@@ -36,7 +36,7 @@
 <!-- Header with image -->
 <div class="header">
     <div class="container">
-        <h1>Welcome to my website!</h1>
+        <h1>{{ $title }}</h1>
     </div>
 </div>
 
@@ -64,7 +64,7 @@
 <footer>
     <div class="footer-section">
         <a href="https://hz.nl/">
-            <img src="hz-logo.png" class="hz-logo" alt="HZ logo">
+            <img src="{{ asset('images/hz-logo.png') }}" class="hz-logo" alt="HZ logo">
         </a>
         <div class="icons">
             <a href="https://github.com/pana0008" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -73,11 +73,21 @@
         </div>
         <div class="footer-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="{{ route('home') }}"
+                       class="{{ Request::route()->getName() === 'home' ? "active" : "" }}">
+                        Home</a></li>
+                <li><a href="{{ route('profile') }}"
+                       class="{{ Request::route()->getName() === 'profile' ? "active" : "" }}">
+                        Profile</a></li>
+                <li><a href="{{ route('dashboard') }}"
+                       class="{{ Request::route()->getName() === 'dashboard' ? "active" : "" }}">
+                        Dashboard</a></li>
+                <li><a href="{{ route('faq') }}"
+                       class="{{ Request::route()->getName() === 'faq' ? "active" : "" }}">
+                        FAQ</a></li>
+                <li><a href="{{ route('posts.index') }}"
+                       class="{{ Request::route()->getName() === 'posts.index' ? "active" : "" }}">
+                        Blog</a></li>
             </ul>
         </div>
     </div>

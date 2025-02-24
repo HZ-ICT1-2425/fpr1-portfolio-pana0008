@@ -1,4 +1,5 @@
 <x-layout.main>
+    <x-slot:title>Frequently Asked Questions</x-slot:title>
     <!--Questions and Answers-->
     <center>
         <details>

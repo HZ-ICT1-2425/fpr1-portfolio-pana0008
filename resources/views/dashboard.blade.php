@@ -1,9 +1,8 @@
 <x-layout.main>
+    <x-slot:title>Dashboard</x-slot:title>
     <br>
     <br>
     <br>
-    <!--Table-->
-    <link href="./css/table.css" rel="stylesheet">
     <div class="dashboard-table">
         <table>
             <thead>

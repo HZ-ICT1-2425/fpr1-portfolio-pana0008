@@ -1,5 +1,5 @@
 <x-layout.main>
-
+    <x-slot:title>Welcome to my website!</x-slot:title>
 {{-- Content --}}
 <!-- Who am I section -->
 <h2 class="who-am-i"><em>Who am I?</em></h2>

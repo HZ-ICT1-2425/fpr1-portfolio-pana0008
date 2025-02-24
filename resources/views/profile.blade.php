@@ -1,4 +1,5 @@
 <x-layout.main>
+    <x-slot:title>Profile Page</x-slot:title>
     <div class="my-info">
         <div class="portrait-photo">
             <img src="{{ asset('images/me.jpg') }}" alt="A close up picture of me" width=500px>

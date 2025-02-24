@@ -298,8 +298,6 @@ a:hover {
     text-align: left;
     margin-top: 30px;
     font-size: 18px;
-    flex-basis: content;
-    margin: 0 0px 15px;
     overflow: hidden;
 }
 
@@ -335,8 +333,9 @@ a:hover {
     background-color: rgb(60, 55, 40);
     padding: 18px;
     border-radius: 50px;
-    bottom: -15px;
+    bottom: -10px;
     left: 15px;
+
 }
 
 .button:hover {
@@ -679,4 +678,91 @@ footer {
 }
 
 
-/*Table CSS*/
+
+/*Table*/
+table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1200px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.227);
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+td,
+th {
+    border: 1.5px solid rgb(60, 55, 40)
+}
+
+
+th,
+td {
+    padding: 15px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(60, 55, 40);
+}
+
+th {
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+thead {
+    th {
+        background-color: rgb(80, 75, 57);
+    }
+}
+
+
+.grade-input {
+    width: 50px;
+}
+
+
+/*Progress Bar*/
+.completeness-bar {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    border: 1px solid rgb(80, 75, 57);
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.completeness-percentage {
+    height: 100%;
+    background: rgba(107, 103, 82, 0.99);
+    width: 75%;
+    border-radius: 20px;
+
+    #success {
+        position: absolute;
+        height: 170%;
+        width: auto;
+        margin-left: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    #maximum {
+        position: absolute;
+        height: 170%;
+        width: auto;
+        margin-left: 94%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+}
+
+#progress-text {
+    text-align: center;
+    font-size: 18px;
+}

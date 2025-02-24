@@ -42,13 +42,4 @@ class StaticContentController extends Controller
     {
         return view('faq');
     }
-
-
-    /**
-     * @return 'blog' view
-     */
-    public function blog()
-    {
-        return view('blog');
-    }
 }
