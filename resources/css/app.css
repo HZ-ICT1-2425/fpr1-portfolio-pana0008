@@ -343,6 +343,9 @@ a:hover {
     transition: 0.5s;
 }
 
+#create-blog {
+    margin-top: 20px;
+}
 
 /*Blog Return Button*/
 .return-button {

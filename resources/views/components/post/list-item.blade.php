@@ -7,7 +7,7 @@
         </h2>
         <div class="date">
             <em>
-            {!! $post->date !!}
+            {!! $post->created_at !!}
             </em>
         </div>
         <br>

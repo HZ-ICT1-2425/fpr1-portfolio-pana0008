@@ -33,13 +33,4 @@ class StaticContentController extends Controller
     {
         return view('dashboard');
     }
-
-
-    /**
-     * @return 'faq' view
-     */
-    public function faq()
-    {
-        return view('faq');
-    }
 }

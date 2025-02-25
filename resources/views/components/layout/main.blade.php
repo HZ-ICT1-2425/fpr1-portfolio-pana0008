@@ -23,8 +23,8 @@
         <li><a href="{{ route('dashboard') }}"
             class="{{ Request::route()->getName() === 'dashboard' ? "active" : "" }}">
                 Dashboard</a></li>
-        <li><a href="{{ route('faq') }}"
-               class="{{ Request::route()->getName() === 'faq' ? "active" : "" }}">
+        <li><a href="{{ route('faqs.index') }}"
+               class="{{ Request::route()->getName() === 'faqs.index' ? "active" : "" }}">
                 FAQ</a></li>
         <li><a href="{{ route('posts.index') }}"
                class="{{ Request::route()->getName() === 'posts.index' ? "active" : "" }}">
@@ -82,8 +82,8 @@
                 <li><a href="{{ route('dashboard') }}"
                        class="{{ Request::route()->getName() === 'dashboard' ? "active" : "" }}">
                         Dashboard</a></li>
-                <li><a href="{{ route('faq') }}"
-                       class="{{ Request::route()->getName() === 'faq' ? "active" : "" }}">
+                <li><a href="{{ route('faqs.index') }}"
+                       class="{{ Request::route()->getName() === 'faqs.index' ? "active" : "" }}">
                         FAQ</a></li>
                 <li><a href="{{ route('posts.index') }}"
                        class="{{ Request::route()->getName() === 'posts.index' ? "active" : "" }}">

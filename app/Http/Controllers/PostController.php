@@ -37,14 +37,14 @@ class PostController extends Controller
 
         $validated = $request->validate([
             'title' => 'required',
-            'date' => 'required',
+            'slug' => 'required',
             'description' => 'required',
             'body' => 'required',
         ]);
         // Copy request data (representing the form inputs) to the
         // object's properties
         $post->title = $validated['title'];
-        $post->date = $validated['date'];
+        $post->slug = $validated['slug'];
         $post->description = $validated['description'];
         $post->body = $validated['body'];
 
@@ -60,6 +60,41 @@ class PostController extends Controller
         return view('posts.edit', [
             'post' => $post
         ]);
+    }
+
+    public function update(Request $request, $post)
+    {
+        $validated = $request->validate([
+            'title' => 'required',
+            'slug' => 'required',
+            'description' => 'required',
+            'body' => 'required',
+        ]);
+
+        $post = Post::findorfail($post);
+
+        $post->update($validated);
+
+        return redirect()->route('posts.show', ['post' => $post->id]);
+    }
+
+    public function delete(Post $post)
+    {
+        return view('posts.delete', [
+            'post' => $post
+        ]);
+    }
+
+
+    public function destroy(Post $post)
+    {
+
+        // Delete the post from the database
+        $post->delete();
+
+        // Redirect to the blog show page
+        return redirect()->route('posts.index')
+            ->with('success', 'Post has been successfully deleted!');
     }
 
 }
