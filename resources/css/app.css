@@ -1,0 +1,771 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #faebd7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/*Header*/
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+.header {
+    background: url(https://images.unsplash.com/photo-1590258335103-0664be2e92bd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljJTIwZm9yZXN0fGVufDB8fDB8fHww) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.header .container {
+    position: relative;
+    top: 200px;
+}
+
+.header h1 {
+    color: #faebd7;
+    line-height: 100px;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-family: Brush Script MT, cursive;
+}
+
+/*Navigation Menus*/
+.navigation {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(60, 55, 40);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        padding: 14px 16px;
+        text-align: center;
+        color: antiquewhite;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgb(30, 28, 20);
+        transition: background .5s;
+    }
+
+    .active {
+        background-color: rgb(80, 75, 57);
+    }
+
+}
+
+
+.aside {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 25px;
+        padding-top: 120px;
+        width: 250px;
+        background-color: rgb(60, 55, 40);
+        margin-top: -562px;
+        z-index: 9;
+    }
+
+    li a {
+        display: block;
+        color: antiquewhite;
+        padding: 25px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgb(30, 28, 20);
+        transition: background .5s;
+    }
+
+
+}
+
+
+.border {
+    background: rgb(60, 55, 40);
+    height: 5px;
+    width: 100%;
+}
+
+/*Home Page*/
+.who-am-i {
+    color: rgb(60, 55, 40);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-right: 500px;
+}
+
+.why-ict {
+    color: rgb(60, 55, 40);
+    text-align: center;
+    font-size: 40px;
+    margin-right: 500px;
+}
+
+.about-me {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 600px;
+}
+
+.photo-of-me {
+    position: absolute;
+    left: 1050px;
+    bottom: -400px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+.me-with-two-laptops {
+    position: absolute;
+    left: 950px;
+    bottom: -1100px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+/*FAQ Page*/
+details {
+    padding: 6px;
+    background-color: rgb(222, 202, 175);
+    border-radius: 15px;
+    width: 50%;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgb(60, 55, 40);
+}
+
+summary {
+    list-style-position: outside;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+    list-style-type: '🤎';
+}
+
+details[open]>summary {
+    border-bottom: 1px solid antiquewhite;
+    list-style-type: '🤎';
+}
+
+.answer {
+    padding: 10px;
+    text-align: justify;
+}
+
+.faq-link {
+    color: rgb(146, 113, 71);
+    text-decoration: none;
+}
+
+/*Profile Page*/
+.my-info {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 600px;
+    margin-top: 70px;
+}
+
+.portrait-photo {
+    position: absolute;
+    left: 980px;
+    bottom: -180px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+#me-as-a-child {
+    position: absolute;
+    left: 980px;
+    bottom: -600px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+#screenshot {
+    position: absolute;
+    left: 980px;
+    bottom: -960px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#frog {
+    position: absolute;
+    left: 1050px;
+    bottom: -1460px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#lotr {
+    position: absolute;
+    left: 970px;
+    bottom: -1830px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.introduction {
+    font-size: 40px;
+}
+
+.profile-text {
+    font-size: 23px;
+}
+
+.characteristics {
+    font-size: 23px;
+    line-height: 2.5;
+}
+
+.hobbies {
+    font-size: 23px;
+}
+
+.hobbies ul {
+    line-height: 1.5;
+}
+
+.spotify {
+    font-size: 23px;
+}
+
+.spotify ul {
+    line-height: 2.5;
+}
+
+.spotify a {
+    color: rgb(60, 55, 40);
+    text-decoration: none;
+}
+
+.link {
+    color: rgb(60, 55, 40);
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    color: rgb(159, 129, 97);
+}
+
+
+/*Blog Main Page*/
+.posts {
+    margin-top: 50px;
+}
+
+.blog-post {
+    padding: 6px;
+    background-color: rgb(222, 202, 175);
+    border-radius: 15px;
+    width: 50%;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.blog-post img {
+    border-radius: 15px;
+    padding: 10px;
+    float: right;
+}
+
+
+
+.post-title {
+    color: rgb(60, 55, 40);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.post-text {
+    color: rgb(60, 55, 40);
+    margin-left: 20px;
+}
+
+.date {
+    color: rgb(60, 55, 40);
+    margin-left: 20px;
+    margin-top: -18px;
+}
+
+.button {
+    position: relative;
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: rgb(60, 55, 40);
+    padding: 18px;
+    border-radius: 50px;
+    bottom: -10px;
+    left: 15px;
+
+}
+
+.button:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+
+#create-blog {
+    margin-top: 20px;
+}
+
+/*Blog Return Button*/
+.return-button {
+    position: relative;
+    top: 50px;
+    font-size: 2em;
+
+}
+
+.return-button a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: rgb(60, 55, 40);
+    margin: 40px;
+    border-radius: 50px;
+}
+
+.return-button i {
+    width: 40px;
+    text-align: center;
+}
+
+.return-button a i{
+    color: antiquewhite;
+}
+
+.return-button a:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+
+.return-button a:hover i {
+    color: rgb(60, 55, 40);
+    transition: 0.5s;
+}
+
+
+/*Study Choice Blog Post*/
+.study-choice-title {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 600px;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+.study-choice-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+}
+
+#first-code {
+    position: absolute;
+    left: 940px;
+    bottom: -670px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 500px;
+}
+
+
+
+/*SWOT Analysis Post*/
+.swot-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(222, 202, 175);
+    border-radius: 15px;
+    width: 30%;
+    margin-top: 30px;
+    flex-basis: content;
+    overflow: hidden;
+    font-size: 16px;
+    margin-left: 130px;
+    border: 1px solid rgb(60, 55, 40) ;
+}
+
+#strengths {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+
+}
+
+#weaknesses {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+}
+
+#opportunities {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+}
+
+#threats {
+    position: relative;
+    margin-left: 700px;
+    margin-right: 70px;
+    font-size: 22px;
+    text-align: justify;
+    bottom: 170px;
+}
+
+
+/*Programming Experience Blog Post*/
+.programming-title {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 600px;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+.programming-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+}
+
+#certificate-1 {
+    position: absolute;
+    left: 940px;
+    bottom: -250px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+
+}
+
+#certificate-2 {
+    position: absolute;
+    left: 1200px;
+    bottom: -350px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+}
+
+
+/*First Feedback Post*/
+.feedback-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+    margin-top: 70px;
+}
+
+#feedback-forms {
+    width: 560px;
+    position: absolute;
+    left: 890px;
+    bottom: -330px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/*Profession Blog Post*/
+.profession-title {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 620px;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+
+.profession-text {
+    color: rgb(60, 55, 40);
+    margin-left: 130px;
+    text-align: justify;
+    font-size: 23px;
+    margin-right: 700px;
+}
+
+#from-software {
+    position: absolute;
+    left: 860px;
+    bottom: -350px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 650px;
+}
+
+#cd-projekt {
+    position: absolute;
+    left: 860px;
+    bottom: -790px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 650px;
+}
+
+#baldurs-gate {
+    position: absolute;
+    left: 860px;
+    bottom: -1250px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 650px ;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rgb(60, 55, 40);
+}
+
+.footer-section {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icons a i {
+    font-size: 2em;
+    color: rgb(60, 55, 40);
+    opacity: 0.9;
+}
+
+
+.icons a:hover {
+    background-color: rgb(60, 55, 40);
+    transition: 0.5s;
+}
+
+.icons a:hover i {
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+.footer-nav {
+    margin: 30px 0;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.footer-nav ul li a {
+    color: antiquewhite;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footer-nav ul li a:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 700px) {
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .icons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+.hz-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    left: 43.25%;
+    bottom: 20px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.hz-logo:hover {
+    background-color: rgb(60, 55, 40);
+    transition: 0.5s;
+}
+
+
+
+/*Table*/
+table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1200px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.227);
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+td,
+th {
+    border: 1.5px solid rgb(60, 55, 40)
+}
+
+
+th,
+td {
+    padding: 15px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(60, 55, 40);
+}
+
+th {
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+thead {
+    th {
+        background-color: rgb(80, 75, 57);
+    }
+}
+
+
+.grade-input {
+    width: 50px;
+}
+
+
+/*Progress Bar*/
+.completeness-bar {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    border: 1px solid rgb(80, 75, 57);
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+.completeness-percentage {
+    height: 100%;
+    background: rgba(107, 103, 82, 0.99);
+    width: 75%;
+    border-radius: 20px;
+
+    #success {
+        position: absolute;
+        height: 170%;
+        width: auto;
+        margin-left: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    #maximum {
+        position: absolute;
+        height: 170%;
+        width: auto;
+        margin-left: 94%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+}
+
+#progress-text {
+    text-align: center;
+    font-size: 18px;
+}

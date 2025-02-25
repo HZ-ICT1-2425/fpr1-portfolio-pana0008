@@ -1,6 +1,6 @@
 ![Logo of the project](https://avatars3.githubusercontent.com/u/40756580?s=200&v=4)
 
-# Project-name
+# Project-name - Laravel Portfolio
 
 Laravel Skeleton App. Base project for all HZ-HBO-ICT Laravel projects.
 
@@ -69,6 +69,8 @@ The simplest way that ensures all the files are as close to a fresh installation
 ## Authors
 
 * **Daan de Waard** - *Initial work* - [dwaard](https://github.com/dwaard)
+
+* **Gabriela Panayotova** - [pana0008](https://github.com/pana0008)
 
 See also the list of [contributors](https://github.com/HZ-HBO-ICT/laravel-skeleton-app/graphs/contributors) who
 participated in this project.
